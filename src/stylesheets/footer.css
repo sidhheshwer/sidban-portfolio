@@ -1,0 +1,54 @@
+.footer {
+ background: linear-gradient(to right, #121212cc, #5a2c2caa, #cc000065);
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+  border-top: 1px solid #ffffff10;
+}
+
+.footer-top {
+  margin-bottom: 1rem;
+}
+
+.footer-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.white-text {
+  color: white;
+}
+
+.red-text {
+  color: #cc0000;
+}
+
+.footer-tagline {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+  color: #999;
+}
+
+.footer-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.footer-icons a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #cc0000;
+}
+
+.footer-bottom {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 1rem;
+}

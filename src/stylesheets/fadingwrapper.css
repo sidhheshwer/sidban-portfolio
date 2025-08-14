@@ -1,0 +1,9 @@
+.fading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0px 0px;
+  transition: opacity 1s linear, transform 1s ease-in; 
+}

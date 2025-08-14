@@ -1,0 +1,278 @@
+.acadamics-container{
+  
+      display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    width:100%;
+     height: 80vh;
+    margin: 0rem auto 6rem auto;
+    padding: 0rem;
+    background:linear-gradient(to top,rgba(255, 0, 0, 0.232),rgba(255, 255, 255, 0.169));
+    border-radius: 10px 10px 0px 0px;
+    opacity: 1;
+    background-image: url('/public/images/nat4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+
+}
+.acadamics-head-logo{
+    color: rgba(255, 255, 255, 0.465);
+}
+
+.acadamics-content{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+    align-self: center;
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.154));
+    backdrop-filter: blur(2px);
+    width: 100vw;
+    height: 100%;
+    padding: 1rem;
+    color: #fff;
+    overflow: hidden;
+    
+
+}
+.passouts{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   width: 100%;
+   justify-content: space-between;
+   align-content: center;
+   align-self: center;
+   align-items: center;
+}
+.percent-label{
+  color: rgba(255, 0, 98, 0.912);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.yearsDate{
+  color: rgba(239, 239, 239, 0.568);
+   font-size: 0.8rem;
+}
+.school-icon,.college-icon,.graduate-icon{
+  margin-left: 2px;
+  color: rgba(255, 187, 0, 0.568);
+}
+
+.acadamics-school-percent{
+  color: rgba(219, 219, 219, 0.726);
+  font-size: 0.8rem;
+}
+.acadamics-school-details1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 0.2rem;
+}
+.acadamics-school-details2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: start;
+    align-items: start;
+    font-size: 0.1rem;
+   background: linear-gradient(to left, #00000042,rgba(190, 59, 120, 0.198));
+    backdrop-filter: blur(5rem);
+   border-radius: 10px 10px 10px 10px;
+
+}
+.arrow-right{
+  font-size: 1rem;
+  color: rgba(255, 157, 0, 0.413);
+}
+.location-logo{
+  color: rgba(128, 255, 0, 0.329);
+}
+
+.acadamics-school-description{
+  font-size: 1rem;
+  padding: 0.1rem;
+     background: linear-gradient(to right, #ffffff,rgba(255, 0, 98, 0.31));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.acadamics-school-locations{
+   display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    font-size: 0.5rem;
+}
+.location{
+    font-size: 0.8rem;
+}
+
+.affiation{
+    
+    font-size: 0.5rem;
+}
+
+.acadamics-school,.acadamics-school-visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 0rem;
+    margin-top:0.5rem;
+    color: #fff;
+   
+    transition: margin-left 0.9s linear;
+}
+.acadamics-school{
+    margin-left: -150%;
+}
+
+.acadamics-college,.acadamics-college-visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 0rem;
+    margin-top:0.5rem;
+    color: #fff;
+   transition: margin-left 0.9s linear;
+  
+}
+
+.acadamics-college{
+    margin-left: -150%;
+}
+.acadamics-school-name{
+   background: linear-gradient(to right, #ffffff, #e40000e4,rgb(250, 2, 2));
+  background-clip: text;
+  font-size: 0.9rem;
+  -webkit-text-fill-color: transparent;
+}
+.acadamics-school-logo{
+  width: 3rem;
+  height: 3rem;
+}
+
+.acadamics-school-visible{
+    margin-left: 0%;
+}
+
+.acadamics-college-visible{
+   margin-left: 0%;
+}
+
+
+
+@keyframes backgroundImageChange {
+  0% {
+    background-image: url('/public/images/nat4.png');
+  }
+  50% {
+    background-image: url('/public/images/nat2.jpeg');
+  }
+   75% { 
+    background-image: url('/public/images/acpce7.JPG');
+  }
+   100% {
+    background-image: url('/public/images/acpce8.JPG');
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+
+.acadamics-content{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+    align-self: center;
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.154));
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    color: #fff;
+    overflow: hidden;
+
+    
+
+}
+
+.acadamics-school-details1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    margin: 0.2rem;
+}
+.acadamics-school-details2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+   background: linear-gradient(to left, #00000042,rgba(190, 59, 120, 0.198));
+    backdrop-filter: blur(5rem);
+   border-radius: 10px 10px 10px 10px;
+
+}
+
+.acadamics-school,.acadamics-school-visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin-top:0.2rem;
+    color: #fff;
+        transition: margin-left 0.9s linear;
+}
+
+.acadamics-college,.acadamics-college-visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    margin-top:0.2rem;
+    color: #fff;
+   transition: margin-left 0.9s linear;
+  
+}
+
+.acadamics-school-name{
+   background: linear-gradient(to right, #ffffff, #e40000e4,rgb(250, 2, 2));
+  background-clip: text;
+  font-size: 2rem;
+  -webkit-text-fill-color: transparent;
+}
+.acadamics-school-logo{
+  width: 3rem;
+  height: 3rem;
+}
+}

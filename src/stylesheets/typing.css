@@ -1,0 +1,23 @@
+.typing-container {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Courier New', monospace;
+  color: #fff;
+  margin-top: 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.typing-cursor {
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink 0.7s steps(1) infinite;
+  color: red;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,205 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  width: 100%;
+  height: 80vh;
+  margin: 0rem auto 6rem auto;
+  padding: 0rem;
+   background:url("/public/images/sidban-movies-img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+   animation: backgroundImageChange2 20s infinite alternate;
+    transition: 5s linear ;
+    overflow: hidden;
+}
+
+.project-container2{
+  padding: 1rem;
+  height: 80vh;
+   background:linear-gradient(to left,rgb(21, 20, 20),black,rgba(225, 7, 76, 0.386));
+     backdrop-filter: blur(2px);
+     overflow-y: auto;
+}
+
+.project-content,
+.project-content-visible {
+display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+    width: 100%;
+    height: auto;
+  margin-top: 0.5rem;
+  background: linear-gradient(to right,rgba(15, 12, 12, 0.238) ,rgb(4, 4, 4),black);
+     backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 1rem;
+   transition: margin-left 0.9s linear;
+}
+
+.project-content {
+  margin-left: -120%;
+}
+
+.project-content-visible {
+  margin-left: 0px;
+}
+
+.project-content2,
+.project-content2-visible {
+display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+    width: 100%;
+    height: auto;
+  margin-top: 0.5rem;
+  background: linear-gradient(to right,rgba(15, 12, 12, 0.238) ,rgb(4, 4, 4),black);
+     backdrop-filter: blur(8px);
+  border-radius: 10px;
+  padding: 1rem;
+   transition: margin-left 0.9s linear;
+}
+
+.project-content2 {
+  margin-left: 200%;
+}
+
+.project-content2-visible {
+  margin-left: 0px;
+}
+
+.project-details{
+   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+    width: 100%;
+  height: 100%;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  font-size: 0.8rem;
+
+
+}
+.project-head{
+  position: sticky;
+  z-index: 1;
+}
+
+.project-descrip{
+  font-size: 0.6rem;
+  padding: 1rem;
+   border-radius: 10px;
+     background: linear-gradient(to right, #ebebeb,rgba(225, 225, 225, 0.31));
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+.project2-details{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+    width: 100%;
+  height: 100%;
+  background-size: cover;
+    backdrop-filter: blur(2px);
+  font-size: 0.8rem;
+
+}
+
+.project3-details{
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+    backdrop-filter: blur(1px);
+  font-size: 0.8rem;
+
+}
+.developer-icon{
+  color: rgba(255, 255, 255, 0.358); 
+}
+.project-icon{
+  color: rgb(255, 162, 0);
+}
+.sidban-imgs{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.project-button{
+   width: 100%;
+   height: 1.5rem;
+   margin-top: 0.8rem;
+   background: linear-gradient(to left,rgba(0, 0, 0, 0.286),rgb(0, 0, 0),rgba(255, 0, 0, 0.521));
+   color: white;
+   border-radius: 10px;
+   border: none;
+}
+
+
+@keyframes backgroundImageChange2 {
+  0% {
+       background:url("/public/images/sidban-movies-img.png");
+  }
+  50% {
+      background:url("/public/images/sidban-chat-img.png");
+  }
+   75% { 
+     background:url("/public/images/sidban-movies-img.png");
+  }
+   100% {
+      background:url("/public/images/sidban-auth-img.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+
+.project-container2{
+  background:linear-gradient(to left,rgb(21, 20, 20),black,rgba(225, 7, 76, 0.386));
+}
+
+.project-descrip{
+  font-size: 1.5rem;
+  padding: 1rem;
+   border-radius: 10px;
+     background: linear-gradient(to right, #ebebeb,rgba(225, 225, 225, 0.31));
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
+}
+
+.project-details,.project2-details,.project3-details{
+   font-size: 1.5rem; 
+   padding: 1rem;
+   background:linear-gradient(to left,rgb(6, 6, 6),black,rgba(255, 0, 0, 0.386));
+   border-radius: 10px;
+}
+
+
+.sidban-imgs{
+   width: 200px;
+   height: 200px;
+}
+.project-button{
+  height: 80px;
+  font-size: 1.5rem;
+}
+
+
+}
+

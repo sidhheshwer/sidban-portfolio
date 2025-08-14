@@ -1,38 +1,226 @@
-.App {
-  text-align: center;
+.sidban-header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    height:auto;
+    z-index: 2000;
+   visibility:visible;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.hemburger{
+    position: fixed;
+    margin:5% auto 0% 90%;
+    z-index: 3000;
+    padding: 0rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidban-header-visible{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    width: 100%;
+    align-items: center;
+    min-height: 5vh;
+    z-index: 2000;
+   visibility:hidden;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ 
+.white-text{
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.red-text{
+    color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.iconz{
+    size: 1.2rem;
+    color: rgb(255, 255, 255);
+
+
+}
+
+.menu-contents,.menu-contents-visible{
+    position: fixed;
+   padding: 1rem;
+    width: 50%;
+   border-radius: 10px;
+    margin: 30% auto 0% auto;
+    z-index: 5000;
+  transition: transform 0.5s ease-in-out;
+    overflow: hidden;  
+}
+.menu-contents{
+    transform: translateX(130%);
+}
+.menu-contents-visible{
+  transform: translateX(200%);
+}
+
+.menu-div{
+    width: 100%;
+    height: 100%;
+    font-size: 0.8rem;
+    list-style: none;
+ 
+
+
+}
+
+.menu-items{
+       display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:start;
+    align-items: start;
+     width: 100%;
+    height: 100%;
+    margin-bottom: 3rem;
+    cursor:pointer;
+     background: linear-gradient(to left,rgba(237, 0, 0, 0.34),rgba(0, 0, 0, 0.312),rgba(0, 0, 0, 0.312));
+   padding: 1rem;
+   border-radius: 10px;
+ 
+}
+.menu-items-green{
+          display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:start;
+    align-items: start;
+     width: 100%;
+    height: 100%;
+    margin-bottom: 3rem;
+    cursor:pointer;
+      padding: 1rem;
+        border-radius: 10px;
+   background: linear-gradient(to left,rgba(32, 237, 0, 0.361),rgba(0, 0, 0, 0.312),rgba(0, 0, 0, 0.312));
+}
+
+
+
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content:center;
+    min-height: 90vh;
+    overflow-y:auto;
+    background:linear-gradient(to bottom,black,rgba(0, 0, 0, 0.204),rgba(152, 50, 50, 0.192));
+}
+
+.courseraIcon{
+  font-style: oblique;
+  color: #ffffff60;
+
+}
+.courseIcon{
+  width: auto;
+  height: auto;
+  font-size: 2rem;
+ 
+}
+.courseIcon-university{
+ width: 50px;
+ height: auto;
+ font-size: 2rem;
+}
+
+@media screen and (min-width:768px){
+    .hemburger{
+    position: fixed;
+    margin:0% auto 0% 90%;
+    z-index: 3000;
+    padding: 0rem;
+    visibility: hidden;
+}
+  .menu-contents,.menu-contents-visible{
+   padding: 1rem;
+    width: 10%;
+   border-radius: 10px;
+    margin: 5% auto 0% auto;
+  transition: transform 0.5s ease-in-out;
+    overflow: hidden;  
+}
+.menu-contents{
+    transform: translateX(0%);
+}
+.menu-contents-visible{
+  transform: translateX(0%);
+}
+
+.menu-div{
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    list-style: none;
+ 
+
+
+}
+
+.menu-items{
+       display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:end;
+    align-items: end;
+     width: 100%;
+    height: 100%;
+    margin-bottom: 3rem;
+    cursor:pointer;
+     background: linear-gradient(to left,rgba(237, 0, 0, 0.34),rgba(0, 0, 0, 0.312),rgba(0, 0, 0, 0.312));
+   padding: 1rem;
+   border-radius: 10px;
+ 
+}
+.menu-items-green{
+          display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:end;
+    align-items: end;
+     width: 100%;
+    height: 100%;
+    margin-bottom: 3rem;
+    cursor:pointer;
+      padding: 1rem;
+        border-radius: 10px;
+   background: linear-gradient(to left,rgba(32, 237, 0, 0.361),rgba(0, 0, 0, 0.312),rgba(0, 0, 0, 0.312));
+}
+
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:start;
+    min-height: auto;
+    overflow-y:auto;
+    background:linear-gradient(to bottom,black,rgba(0, 0, 0, 0.204),rgba(152, 50, 50, 0.192));
+}
+
+.courseraIcon{
+  font-style: oblique;
+  color: #ffffff60;
+
+
+}
+.courseIcon{
+  width: auto;
+  height: auto;
+  font-size: 3rem;
+}
+.courseIcon-university{
+ width: 100px;
+ height: auto;
+}
+
 }

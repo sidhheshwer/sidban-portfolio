@@ -1,0 +1,28 @@
+.contact-content{
+   position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:start;
+    align-items: center;
+   width: 80%;
+   padding: 0.5rem;
+   border-radius: 50px 0px 0px 50px;
+   height: auto;
+   background:linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 0),rgb(37, 37, 37));
+   overflow: hidden;
+
+}
+
+
+
+
+.contact-icons a {
+  color: rgba(250, 142, 0, 0.746);
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+.contact-icons a:hover {
+  color: rgba(255, 0, 0, 0.396);
+}

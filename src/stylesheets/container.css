@@ -1,0 +1,16 @@
+.container{ 
+
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 4rem auto 0rem auto;
+}
+
+
+
+@media (min-width: 768px) {
+  .container {
+      width: 100%;
+    height: auto;
+  }
+}

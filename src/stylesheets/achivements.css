@@ -1,0 +1,245 @@
+.achive-container{
+      display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  width: 100%;
+   height: 80vh;
+  margin: 0rem auto 0rem auto;
+  padding: 0rem;
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.346), rgba(10, 10, 10, 0.169),black);
+    background-image: url('/public/images/sid9.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+  border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
+}
+
+.archive-content{
+  display: flex;
+  flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: start;
+   align-items: center;
+   width: 100%;
+   height: auto;
+   padding: 0rem;
+     background: linear-gradient(to right, rgba(255, 0, 0, 0.307), rgba(10, 10, 10, 0.445),rgb(7, 7, 7));
+   column-gap: 30%;
+   backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.168);
+  overflow-x:auto;
+}
+.certificate-head{
+  width: 100%;
+  padding: 1rem;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.621), rgba(106, 39, 39, 0.486),black);
+    backdrop-filter: blur(5px);
+}
+.certificate-div{
+    display: flex;
+  flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   align-items: start;
+   row-gap:5%;
+   width: 100%;
+   height:100%;
+   
+
+
+}
+
+
+.certificate-images{
+  width: 80%;
+  height:50%;
+  border-radius: 10px;
+}
+.certificate-description{
+  width: auto;
+  height:auto;
+  border-radius: 10px;
+  padding: 0rem;
+  font-size: 2rem;
+  overflow: hidden;
+   background: linear-gradient(to right, rgba(255, 0, 0, 0.346), rgba(10, 10, 10, 0.169),black);
+}
+
+.cicon{
+  color: rgba(255, 255, 255, 0.537) ;
+}
+
+.certificate-title{
+   display: flex;
+   flex-direction: row;
+   justify-content:space-evenly;
+   align-items: center;
+    align-content: center;
+   width: auto ;
+   height: auto;
+   padding: 0.2rem;
+}
+.certificate-summary ,.certificate-summary-visible{
+  font-size: 0.8rem;
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100px; 
+  overflow: hidden;
+  transition: opacity 0.9s linear, max-height 0.9s linear;
+}
+
+.certificate-summary-visible {
+  opacity: 0;
+  max-height: 0;
+}
+.coursera-image{
+  width: 20%;
+  height: auto;
+}
+.certificate-link{
+   display: flex;
+   flex-direction: row;
+   justify-content:start;
+   align-items: center;
+    margin-left: 0.5rem;
+}
+
+.read-more{
+ width: auto;
+ height:auto ;
+
+}
+
+.uicon{
+  margin-right: 0.5rem;
+}
+.utext{
+  font-size: 0.9rem;
+  margin-left: 0rem;
+}
+@media screen and (min-width: 768px) {
+  .achive-container{
+      display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  width: 100%;
+   height: 80vh;
+  margin: 0rem auto 0rem auto;
+  padding: 0rem;
+   background-image: url('/public/images/sid8.jpeg');
+    backdrop-filter: blur(3px);
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+  border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
+}
+.archive-content{
+  display: flex;
+  flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   backdrop-filter: blur(3px);
+   width: 100%;
+   height: auto;
+   padding: 0rem;
+   column-gap: 5%;
+  overflow-x:scroll;
+   background: linear-gradient(to right, rgba(255, 0, 0, 0.346), rgba(10, 10, 10, 0.169),black);
+}
+.certificate-div{
+    display: flex;
+  flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content:center;
+   align-content: center;
+   align-items: center;
+   width: 100%;
+   height:100%;
+ background: linear-gradient(to right, rgb(255, 0, 0), rgba(10, 10, 10, 0.169),black);
+
+}
+
+
+.certificate-images{
+  width: 50%;
+  height:100%;
+  border-radius: 0px;
+}
+.certificate-description{
+width: auto;
+  height:auto;
+  border-radius: 10px;
+  padding: 0rem;
+  font-size: 2rem;
+  overflow: hidden;
+   background: linear-gradient(to right, rgba(255, 0, 0, 0.346), rgba(10, 10, 10, 0.169),black);
+}
+
+.certificate-description{
+  width: 100%;
+  height:auto;
+  border-radius: 10px;
+  padding: 1rem;
+
+}
+.read-more{
+  width: 10%;
+  height:10% ;
+}
+
+.cicon{
+  color: rgba(255, 255, 255, 0.281) ;
+}
+
+.certificate-title{
+  display: flex;
+   font-size: 1rem;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content:space-around;
+   justify-items: center;
+   align-items: center;
+   row-gap: 0px;
+   width: 100% ;
+   padding: 0rem;
+}
+.certificate-summary ,.certificate-summary-visible{
+  font-size: 1rem;
+  opacity: 1;
+  max-height: auto; /* or however tall it should be */
+  overflow: hidden;
+  transition: opacity 0.9s linear, max-height 0.9s linear;
+}
+
+.certificate-summary-visible {
+  opacity: 0;
+  max-height: 0;
+}
+.coursera-image{
+  width: 20%;
+  height: auto;
+  margin-left: 1rem;
+}
+
+.certificate-head{
+  width: 100%;
+  padding: 1rem;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.621), rgba(5, 5, 5, 0.486),black);
+    backdrop-filter: blur(5px);
+}
+.certificate-link{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:start;
+  align-content: center;
+  align-items: center;
+
+}
+}
