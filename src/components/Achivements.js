@@ -31,7 +31,7 @@ function handleOnOpenCoursera(link){
         {certificates.map((item, i) => (
           <div className='certificate-div' key={i}>
           
-            <img src={item.src} alt='certficate-images' className='certificate-images' />
+            <img src={item.src} alt={item.courseraAlt || 'certificate-image'} className='certificate-images' />
             <div className='certificate-description'>
               <div className='certificate-title'><p className='uicon'>{item.courseIcon}</p><p className='utext'>{item.text}</p><MdOutlineReadMore className='read-more' onClick={()=>{handleOnShow()}}/></div>
               <p className='certificate-link'> 
