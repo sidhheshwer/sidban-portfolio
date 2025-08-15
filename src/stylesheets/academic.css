@@ -13,9 +13,11 @@
     opacity: 1;
     background: url('/public/images/nat4.png');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-position:center;
-
+      animation: backgroundImageChange 20s infinite alternate;
+    transition: 0.9s  ease-in-out ;
+    overflow: hidden;
 }
 .acadamics-head-logo{
     color: rgba(255, 255, 255, 0.465);
