@@ -11,10 +11,11 @@
     background:linear-gradient(to top,rgba(255, 0, 0, 0.232),rgba(255, 255, 255, 0.169));
     border-radius: 10px 10px 0px 0px;
     opacity: 1;
-    background: url('/public/images/nat4.png');
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position:center;
+     background: linear-gradient(to top, rgba(255, 0, 0, 0.232), rgba(255, 255, 255, 0.169)),
+              url('/public/images/nat4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
       animation: backgroundImageChange 20s infinite alternate;
     transition: 0.9s  ease-in-out ;
     overflow: hidden;
@@ -181,19 +182,18 @@
 
 @keyframes backgroundImageChange {
   0% {
-    background: url('/public/images/nat4.png');
+    background-image: url('/public/images/nat4.png');
   }
   50% {
-    background: url('/public/images/nat2.jpeg');
+    background-image: url('/public/images/nat2.jpeg');
   }
-   75% { 
-    background: url('/public/images/acpce7.JPG');
+  75% { 
+    background-image: url('/public/images/acpce7.JPG');
   }
-   100% {
-    background: url('/public/images/acpce8.JPG');
+  100% {
+    background-image: url('/public/images/acpce8.JPG');
   }
 }
-
 
 @media screen and (min-width: 768px) {
 
