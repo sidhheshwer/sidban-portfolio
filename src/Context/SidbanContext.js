@@ -7,6 +7,7 @@ import { FcGoogle } from "react-icons/fc";
 
 const SidbanContext=createContext({});
 
+
 export const SidbanContextProvider=({children})=>{
 
     const sidbio={

@@ -8,7 +8,6 @@ import { SidbanContextProvider } from './Context/SidbanContext';
 import Footer from './components/Footer';
 
 function App() {
-
   const [isVisible, setIsVisible] = useState(false);
   const [colorChange,setColorChange]=useState(null);
   const[showMenu,setMenu]=useState(false);
@@ -19,7 +18,6 @@ function App() {
    const technicalRef=useRef(null);
     const projectRef=useRef(null);
      const achiveRef=useRef(null);
-
 
 
 
@@ -66,13 +64,14 @@ function handleOnScrollView(ref,index) {
     });
   }
  
+  
+
 
  
 }
     
   return (
     <>
-
       <GiHamburgerMenu className='hemburger' onClick={()=>{handleOnMenu()}}/>
      <header className= {isVisible ?'sidban-header':"sidban-header-visible"}  >
      <h1><span className='white-text'>Sid</span><span className='red-text'>ban</span> <MdAdminPanelSettings className='sidban-icon'/></h1>
@@ -94,7 +93,6 @@ function handleOnScrollView(ref,index) {
        
        </SidbanContextProvider>
     </div>
-   
     <Footer/>
     </>
   );
