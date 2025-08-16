@@ -25,7 +25,7 @@ const acadamics = {
         collegeLocation: "Chembur, Mumbai India",
         collegeAffiliation: "Maharashtra State Board",
         tenthPercentage: "81.60%",
-        twelthPercentage: "65.60%", 
+        twelthPercentage: "65.54%", 
         sscYear: "2016",
         hscYear: "2018"
     }],
@@ -35,7 +35,7 @@ const acadamics = {
         collegeLink: "https://www.acpce.org/",
         collegeDescription: "Pursued my Bachelor of Engineering in Information Technology at A.C.P.C.E, a premier engineering institution.",
         collegeLocation: "Kharghar, Navi Mumbai India",
-        collegeCGPA: "7.8",
+        collegeCGPA: "7.86",
         collegeYear: "2022",
         collegeAffiliation: "University of Mumbai"
     }]

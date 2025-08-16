@@ -103,7 +103,7 @@ useEffect(() => {
 
                                 <div className='passouts'>
                                     <div>
-                                        <p className='acadamics-school-percent'><span className='percent-label'>CGPA</span>: {degree.collegeCGPA} </p>
+                                        <p className='acadamics-school-percent'><span className='percent-label'>CGPI</span>: {degree.collegeCGPA} </p>
                                     </div>
                                     <div>
                                         <p className='yearsDate'><FaUserGraduate className='graduate-icon' /> {degree.collegeYear}</p>

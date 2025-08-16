@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { SidbanContextProvider } from './Context/SidbanContext';
 import Footer from './components/Footer';
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
@@ -72,6 +73,7 @@ function handleOnScrollView(ref,index) {
     
   return (
     <>
+     <ToastContainer position="top-right" autoClose={2000} />
       <GiHamburgerMenu className='hemburger' onClick={()=>{handleOnMenu()}}/>
      <header className= {isVisible ?'sidban-header':"sidban-header-visible"}  >
      <h1><span className='white-text'>Sid</span><span className='red-text'>ban</span> <MdAdminPanelSettings className='sidban-icon'/></h1>

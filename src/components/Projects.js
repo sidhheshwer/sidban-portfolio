@@ -76,7 +76,7 @@ useEffect(() => {
       <div className={scrollingUp ?   'project-content':'project-content-visible'}>
         <h3>Sidban-Auth <SiAuthelia className='project-icon'/></h3>
         <div className='project3-details'>
-         <p className='project-descrip'> Sidban Auth – Secure 2FA Authentication with QR & OTP Sidban Auth is a production-ready authentication system. It implements secure login and registration flows, with support for Google OAuth,and two-factor authentication using QR code + OTP.</p>
+         <p className='project-descrip'>sidban-auth is a production-ready authentication system it implements secure login and registration flows, with support for Google OAuth,and two-factor authentication using QR code + OTP.</p>
           <img src='/images/sidban-auth-img.png' alt='sidban-auth' className='sidban-imgs'></img>
         </div>
         <button className='project-button' onClick={()=>{handleOnAuth()}}>try now</button>

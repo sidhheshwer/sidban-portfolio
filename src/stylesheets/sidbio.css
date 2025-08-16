@@ -113,16 +113,15 @@
     justify-content:start;
     align-items: center;
    width: 50%;
-   margin-left:70%;
+   margin-left:60%;
    padding: 0.2rem;
    border-radius: 10px;
    height: auto;
    transition: margin-left 0.9s linear;
    overflow: hidden;
-
 }
 .contact-container{
-  margin-left:70% ;
+  margin-left:60% ;
 }
 
 
@@ -191,7 +190,7 @@
     justify-content:start;
     align-items: center;
    width: 50%;
-   margin-left:90%;
+   margin-left:85%;
    padding: 0.2rem;
    border-radius: 10px;
    height: auto;
@@ -200,7 +199,7 @@
 
 }
 .contact-container{
-  margin-left:90% ;
+  margin-left:85% ;
 }
 
 
