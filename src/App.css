@@ -288,10 +288,9 @@ background: linear-gradient(
 
 .sidProfilePic{
   position: absolute;
-  right: 0;
+  right: 2.1rem;
   width: 13rem;
   height: 13rem;
-  margin-right: 10rem;
   margin-top: 1rem;
  
   border-radius: 50%;
