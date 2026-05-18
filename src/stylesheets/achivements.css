@@ -7,6 +7,7 @@
    height: 80vh;
   margin: 0rem auto 0rem auto;
   padding: 0rem;
+
   background: linear-gradient(to right, rgba(255, 0, 0, 0.346), rgba(10, 10, 10, 0.169),black);
     background-image: url('/public/images/sid9.jpeg');
     background-size: cover;
@@ -25,17 +26,22 @@
    width: 100%;
    height: auto;
    padding: 0rem;
-     background: linear-gradient(to right, rgba(255, 0, 0, 0.307), rgba(10, 10, 10, 0.445),rgb(7, 7, 7));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.279), rgba(56, 55, 55, 0.486),black);
    column-gap: 30%;
    backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.168);
-  overflow-x:auto;
+  overflow:hidden;
 }
 .certificate-head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   width: 100%;
   padding: 1rem;
-    background: linear-gradient(to right, rgba(255, 0, 0, 0.621), rgba(106, 39, 39, 0.486),black);
-    backdrop-filter: blur(5px);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.279), rgba(56, 55, 55, 0.486),black);
+    backdrop-filter: blur(3px);
 }
 .certificate-div{
     display: flex;
@@ -52,9 +58,21 @@
 
 }
 
+.swipeLeftIcon{
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+
+
+}
+
 
 .certificate-images{
-  width: 80%;
+  width: 90%;
   height:50%;
   border-radius: 10px;
 }
@@ -138,6 +156,18 @@
   border-radius: 10px 10px 0 0;
   box-sizing: border-box;
 }
+.swipeLeftIcon{
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: x-large;
+  cursor: pointer;
+
+
+}
 .archive-content{
   display: flex;
   flex-direction: column;
@@ -156,12 +186,12 @@
     display: flex;
   flex-direction: row;
    flex-wrap: nowrap;
-   justify-content:center;
+   justify-content:start;
    align-content: center;
    align-items: center;
    width: 100%;
-   height:100%;
- background: linear-gradient(to right, rgb(255, 0, 0), rgba(10, 10, 10, 0.169),black);
+   min-height:90%;
+ background: linear-gradient(to right, rgba(255, 0, 0, 0.392), rgba(10, 10, 10, 0.169),black);
 
 }
 
@@ -179,7 +209,8 @@ width: auto;
   font-size: 2rem;
   overflow: hidden;
    background: linear-gradient(to right, rgba(255, 0, 0, 0.346), rgba(10, 10, 10, 0.169),black);
-}
+   margin-left: 1%;
+  }
 
 .certificate-description{
   width: 100%;

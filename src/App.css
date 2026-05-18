@@ -8,6 +8,7 @@
     height:auto;
     z-index: 2000;
    visibility:visible;
+   
 }
 
 .hemburger{
@@ -27,9 +28,60 @@
     min-height: 5vh;
     z-index: 2000;
    visibility:hidden;
-
 }
 
+
+
+.sidProfilePic{
+  position: absolute;
+
+  width: 9rem;
+  height: 9rem;
+
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  border: 8px solid rgb(0, 0, 0);
+
+background: linear-gradient(
+  180deg,
+  #000000,
+  #0f0f0f,
+  #ff030322,
+  #ff000054
+);
+
+
+  z-index: 1000;
+
+  animation: fadeProfilePic 1s ease-in 2s backwards;
+}
+
+.sidProfilePicImage{
+  display: relative;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+ 
+  border-radius: 50%;
+
+ 
+}
+
+@keyframes fadeProfilePic {
+  0%{
+    top: -50%;
+    opacity: 0;
+  }
+  100%{
+    top: 0%;
+    opacity: 1;
+  }
+}
  
 .white-text{
     color: white;
@@ -55,23 +107,30 @@
     z-index: 5000;
   transition: transform 0.5s ease-in-out;
     overflow: hidden;  
+ 
 }
+
 .menu-contents{
     transform: translateX(130%);
+   
 }
+
 .menu-contents-visible{
   transform: translateX(200%);
 }
+
+
 
 .menu-div{
     width: 100%;
     height: 100%;
     font-size: 0.8rem;
     list-style: none;
- 
+  
 
 
 }
+
 
 .menu-items{
        display: flex;
@@ -113,8 +172,8 @@
     align-content:center;
     min-height: 90vh;
     overflow-y:auto;
-    background:linear-gradient(to bottom,black,rgba(0, 0, 0, 0.204),rgba(152, 50, 50, 0.192));
-}
+   
+  }
 
 .courseraIcon{
   font-style: oblique;
@@ -149,6 +208,7 @@
   transition: transform 0.5s ease-in-out;
     overflow: hidden;  
 }
+
 .menu-contents{
     transform: translateX(0%);
 }
@@ -204,7 +264,8 @@
     align-items:start;
     min-height: auto;
     overflow-y:auto;
-    background:linear-gradient(to bottom,black,rgba(0, 0, 0, 0.204),rgba(152, 50, 50, 0.192));
+
+  
 }
 
 .courseraIcon{
@@ -223,4 +284,47 @@
  height: auto;
 }
 
+
+
+.sidProfilePic{
+  position: absolute;
+  right: 0;
+  width: 13rem;
+  height: 13rem;
+  margin-right: 2.1rem;
+  margin-top: 1rem;
+
+  border-radius: 50%;
+  overflow: hidden;
+
+  border: 8px solid rgb(0, 0, 0);
+
+background: linear-gradient(
+  210deg,
+  #000000,
+  #000000,
+  #c40c0c42,
+  #ff0000ae
+);
+
+
+  z-index: 1000;
+
+ 
+}
+
+.sidProfilePicImage{
+  display: relative;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+ 
+  border-radius: 50%;
+
+ 
+}
+
+
+ 
 }

@@ -5,35 +5,45 @@
     align-items: start;
     width:100%;
     height: auto;
-    margin: 0rem auto 6rem auto;
-    padding: 0rem;
-    background:linear-gradient(to top,rgba(255, 0, 106, 0.232),rgba(255, 255, 255, 0.169));
+    margin: 0.4rem auto 6rem auto;
+    padding-top: 0rem;
+    background:linear-gradient(to top,rgba(255, 0, 0, 0.232),rgba(255, 255, 255, 0.169));
    background-image:radial-gradient(circle at left center, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)100%),url('/public/images/sid5.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
     border-radius: 10px 10px 0px 0px;
+
     opacity: 1;
+    
 }
 
 .bio-content{
+
     display: flex;
     justify-content: start;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: start;
     width: 100%;
     margin-top: 0rem;
     padding: 1rem;
+    padding-top: 25%;
     height: 100%;
     background:linear-gradient(to right,rgba(5, 5, 5, 0.193),rgba(130, 56, 56, 0),black);
     background:linear-gradient(to bottom,rgba(241, 2, 2, 0.271),rgba(130, 56, 56, 0),black);
-     overflow: hidden;
-  
+    backdrop-filter: blur(0.1rem);
+    overflow: hidden;
+     border-radius: 10px 10px 0px 0px;
+   
 }
 
 .profile-pic-container{
     color: grey;
+  ;
 }
+
+
 
 
 .sid-bio{
@@ -44,9 +54,13 @@
     height: 100%;
     top: 1rem;
     color: white;
-  
    
 }
+
+
+
+
+
 
 
 
@@ -87,7 +101,7 @@
 .sid-description-visible {
 
   width: 100%;
-  margin-top: 100%;
+  margin-top: 70%;
   transition: margin-left 0.9s linear;
   background: linear-gradient(to right, #ffffff,rgba(255, 0, 98, 0.31));
   background-clip: text;
@@ -147,6 +161,8 @@
     background:linear-gradient(to right,rgba(5, 5, 5, 0.193),rgba(130, 56, 56, 0));
     background:linear-gradient(to bottom,rgba(255, 0, 0, 0.193),rgba(130, 56, 56, 0));
     overflow: hidden;
+    backdrop-filter: blur(0.2rem);
+    
 }
 
 

@@ -9,21 +9,20 @@ export default function Contact() {
 
 toast.success("Sidban:Resume downloaded successfully", {
   style: {
-    background: "#d50e0e57",  // black
-    color: "#fff"        // white text
+    background: "#d50e0e57", 
+    color: "#fff"      
   },
 });
 
-  };
+  };  
 
   return (
     <div className="contact-content">
       <div className="contact-icons">
-        <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=2000sidhheshwerbr@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
+       <a
+  href="mailto:2000sidhheshwerbr@gmail.com?subject=Sidban Project Inquiry&body=Hello Sidhheshwer,"
+  className="mailButton"
+>
           <FaEnvelope />
         </a>
         <a
@@ -34,7 +33,7 @@ toast.success("Sidban:Resume downloaded successfully", {
           <FaGithub />
         </a>
       <a
-  href="/Sidhheshwer_Bansode_Resume.pdf"
+  href="/Sidhheshwer_Bansode_Resumee.pdf"
   download="Sidhheshwer_Bansode_Resume.pdf"
    onClick={handleOnResumeDownload}
   >

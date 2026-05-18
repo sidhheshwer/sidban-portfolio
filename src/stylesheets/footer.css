@@ -1,10 +1,10 @@
 .footer {
- background: linear-gradient(to right, #121212cc, #5a2c2caa, #cc000065);
+
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
   padding: 2rem 1rem;
   font-family: 'Segoe UI', sans-serif;
-  border-top: 1px solid #ffffff10;
+  margin-top: 3rem;
 }
 
 .footer-top {

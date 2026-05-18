@@ -1,5 +1,4 @@
 .acadamics-container{
-  
       display: flex;
     justify-content: start;
     flex-direction: column;
@@ -37,8 +36,6 @@
     padding: 1rem;
     color: #fff;
     overflow: hidden;
-    
-
 }
 .passouts{
    display: flex;
@@ -224,6 +221,7 @@
     width: 100%;
     height: 100%;
     font-size: 2rem;
+
     margin: 0.2rem;
 }
 .acadamics-school-details2{

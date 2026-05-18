@@ -80,8 +80,15 @@ function handleOnScrollView(ref,index) {
        
       </header>
     <div className="main-container" ref={nameRef}>
-      
+     <div className='sidProfilePic'>
+  <img
+    className='sidProfilePicImage'
+    src='/images/sidPic1.png'
+    alt='sidhheshwer-bansode-picture'
+  />
+</div>
       <SidbanContextProvider>
+      
   <div className={showMenu?'menu-contents':'menu-contents-visible'}>
     <ul className='menu-div'> 
     <li className={colorChange===1?'menu-items-green':'menu-items'}onClick={()=>{handleOnScrollView(sidbioRef,1)}}>Introduction</li>
@@ -91,8 +98,9 @@ function handleOnScrollView(ref,index) {
         <li className={colorChange===5?'menu-items-green':'menu-items'}onClick={()=>{handleOnScrollView(achiveRef,5)}} >Achivements</li>
         </ul>
      </div>
+      
        <Containers projectRef={projectRef} sidbioRef={sidbioRef} technicalRef={technicalRef} acadamicRef={acadamicRef} achiveRef={achiveRef}/>
-       
+      
        </SidbanContextProvider>
     </div>
     <Footer/>

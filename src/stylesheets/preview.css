@@ -1,0 +1,245 @@
+.previewDiv,
+.previewDiv-visible{
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+    height: 80vh;
+
+    background-color: rgba(24, 24, 24, 0.186);
+
+    z-index: 5000;
+
+    backdrop-filter: blur(6px);
+
+    overflow: hidden;
+
+ transition: transform 0.8s ease-in-out;
+}
+
+.previewDiv{
+     transform: translateX(100%);
+}
+.previewDiv-visible{
+    transform: translateX(0%);
+}
+
+.previewHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 1rem;
+
+    color: white;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    z-index: 100;
+}
+.previewH1 {
+    font-size: 1.2rem;
+    margin:0px auto 0px auto;
+    opacity: 0;
+    transform: translateY(25px);
+
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.previewDescription{
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 0.3px;
+
+    color: rgb(123, 113, 113);
+
+  background: linear-gradient(to right, #ffffff,rgba(255, 0, 98, 0.31));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 400;
+
+    opacity: 0;
+    transform: translateY(25px);
+
+    animation: fadeUpDes 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes fadeUpDes {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.banTextPreview{
+    color: red;
+    font-size: 1.2rem;
+}
+.previewMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+
+    gap: 2rem;
+
+    padding: 2rem;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+.previewMain::-webkit-scrollbar{
+    display: none;
+}
+
+.previewCard{
+    min-width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: start;
+    align-items: center;
+    
+    scroll-snap-align: center;
+}
+
+.previewImages{
+    width: 100%;
+    height: 80%;
+
+    object-fit: contain;
+
+    border-radius: 20px;
+
+    display: block;
+    background-color: rgba(0, 0, 0, 0.435);
+    box-shadow: 0 0 1px rgba(255, 0, 0, 0.328);
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .previewH1 {
+    font-size: 1.5rem;
+    margin:0px auto 0px auto;
+    opacity: 0;
+    transform: translateY(25px);
+
+    animation: fadeUp 0.8s ease forwards;
+}
+.banTextPreview{
+    color: red;
+    font-size: 1.5rem;
+}
+
+    .previewDescription{
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+
+    color: rgb(123, 113, 113);
+
+  background: linear-gradient(to right, #ffffff,rgba(255, 0, 98, 0.31));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: 500;
+
+    opacity: 0;
+    transform: translateY(25px);
+
+    animation: fadeUpDes 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.previewCard{
+    min-width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: start;
+    align-items: center;
+ 
+    scroll-snap-align: center;
+    overflow-x: scroll;
+}
+
+.previewMain{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.433) transparent;
+    gap: 2rem;
+
+    padding: 2rem;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+.previewMain::-webkit-scrollbar{
+    display:-webkit-inline-flex;
+}
+
+.previewImages{
+    width: 100%;
+    height: 100%;
+
+     object-fit: contain;
+
+    border-radius: 20px;
+    display: block;
+    background-color:transparent;
+    box-shadow:none;
+}
+
+}

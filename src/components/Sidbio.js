@@ -27,7 +27,7 @@ export default function Sidbio({sidbioRef}) {
 
 
 useEffect(() => {
-  const element = conatinerRefs.current; // ✅ store ref once
+  const element = conatinerRefs.current; 
 
   const observer = new IntersectionObserver(
     ([entry]) => {
@@ -37,7 +37,7 @@ useEffect(() => {
         setIsVisibility(false);
       }
     },
-    { threshold: 0.1 } // element is "visible" if 10% of it is in view
+    { threshold: 0.1 } 
   );
 
   if (element) {
@@ -52,6 +52,12 @@ useEffect(() => {
 
 
   return (
+    <>
+
+  
+
+ 
+  
     <div className='bio-container' ref={conatinerRefs}>
 
 
@@ -62,13 +68,17 @@ useEffect(() => {
               <span className='white-text'>Sid</span>
               <span className='red-text'>ban</span>
               <MdAdminPanelSettings className='sidban-icon' />
+              
+            
             </>
           ) : (
-
-            <h1>Sidhheshwer <span style={{ color: 'red' }}> Bansode </span> <MdAdminPanelSettings className='sidban-icon' /></h1>
+            <>    
+            <h1 >Sidhheshwer <span style={{ color: 'red' }}> Bansode </span> <MdAdminPanelSettings className='sidban-icon' /></h1>
+             </>
           )}
         </div>
         <div className="sid-bio">
+          
          <h3 className='sid-degree'>{sidbio.education} </h3>
           <span className='sid-title'>{sidbio.title}</span><br />
            <div className={Visiblity ? 'contact-container-visible':'contact-container'} > <Contact/></div>
@@ -79,5 +89,6 @@ useEffect(() => {
           </div>
       </div>
     </div>
+      </>
   )
 }

@@ -44,8 +44,7 @@ useEffect(() => {
 
        <div className={Visiblity ? 'tech-description' : 'tech-description-visible'}>
   <p>
-    Bringing ideas to life with code — from crafting responsive UIs to building robust backend systems, 
-    I work across the full stack to deliver seamless web experiences.
+    Bringing ideas to life with code from crafting responsive UIs to building robust backend systems,I work across the full stack to deliver seamless web experiences.
   </p>
   <br />
   <TypingEffect />

@@ -32,7 +32,7 @@ const acadamics = {
     acpce: [{
         college: "A.C.P.C.E. College of Engineering",
         collegeLogo: "/images/acpco-logo.png",
-        collegeLink: "https://www.acpce.org/",
+        collegeLink: "https://acpce.ac.in/",
         collegeDescription: "Pursued my Bachelor of Engineering in Information Technology at A.C.P.C.E, a premier engineering institution.",
         collegeLocation: "Kharghar, Navi Mumbai India",
         collegeCGPA: "7.86",

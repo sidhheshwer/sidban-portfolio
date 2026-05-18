@@ -26,7 +26,7 @@ export default function TypingEffect() {
         setCharIndex(charIndex + 1);
         if (charIndex + 1 === currentPhrase.length) {
           setDeleting(true);
-          setTimeout(() => {}, 1000); // pause before deleting
+          setTimeout(() => {}, 1000); 
         }
       } else {
         setText(currentPhrase.substring(0, charIndex - 1));

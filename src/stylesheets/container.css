@@ -1,9 +1,10 @@
 .container{ 
-
+  
     width: 100%;
     height: auto;
     overflow: hidden;
     margin: 4rem auto 0rem auto;
+    margin-bottom: 5%;
 }
 
 
@@ -12,5 +13,6 @@
   .container {
       width: 100%;
     height: auto;
+      margin-left: 10%;
   }
 }
