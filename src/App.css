@@ -291,9 +291,9 @@ background: linear-gradient(
   right: 0;
   width: 13rem;
   height: 13rem;
-  margin-right: 2.1rem;
+  margin-right: 5rem;
   margin-top: 1rem;
-
+ 
   border-radius: 50%;
   overflow: hidden;
 
@@ -309,7 +309,6 @@ background: linear-gradient(
 
 
   z-index: 1000;
-
  
 }
 
