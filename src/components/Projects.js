@@ -7,12 +7,13 @@ import { SiAuthelia } from "react-icons/si";
 import { MdDeveloperMode } from "react-icons/md";
 import { GiBrain } from "react-icons/gi";
 import { MdPreview } from "react-icons/md";
+import { IoNewspaper } from "react-icons/io5";
 import Preview from './Preview';
 export default function Projects({ projectRef }) {
 
   const [scrollingUp, setScrollingUp] = useState(false);
   const conatinerRefs = useRef();
-  const [openPreview,setPreview]=useState(false);
+  const [openPreview, setPreview] = useState(false);
   const [selectedProject, setSelectedProject] = useState("");
 
   useEffect(() => {
@@ -54,136 +55,215 @@ export default function Projects({ projectRef }) {
     window.open("https://sidbanai.onrender.com", "_blank");
   }
 
+  function handleOnNews() {
+    window.open("https://sidbannews.onrender.com", "_blank");
+  }
   function handleOnPreview(projectName) {
     setSelectedProject(projectName);
 
     setPreview(true)
-   
+
   }
 
   return (
-<>
-   {  openPreview && (
-    <Preview
-      openPreview={openPreview}
-      setPreview={setPreview}
-      selectedProject={selectedProject}
+    <>
+      {openPreview && (
+        <Preview
+          openPreview={openPreview}
+          setPreview={setPreview}
+          selectedProject={selectedProject}
 
-    />
-  )}
-  
+        />
+      )}
 
-    <div className='projects-container' ref={conatinerRefs}>
 
-      <div className='project-container2' ref={projectRef}>
+      <div className='projects-container' ref={conatinerRefs}>
 
-        <h1 className='project-head'>
-          Develop
-          <span style={{ color: 'red' }}>ments </span>
-          <MdDeveloperMode className='developer-icon' />
-        </h1>
+        <div className='project-container2' ref={projectRef}>
 
-       
+          <h1 className='project-head'>
+            Develop
+            <span style={{ color: 'red' }}>ments </span>
+            <MdDeveloperMode className='developer-icon' />
+          </h1>
 
-        <div className={scrollingUp ? 'project-content' : 'project-content-visible'}>
-          <div className='projectHeader'>
-          <h3 >
-            Sid<span className='banText'>ban</span> Movies <MdMovieFilter className='project-icon' />
-          </h3>
-          <MdPreview className='previewButton' onClick={()=>{handleOnPreview("Sidban Movies")}}></MdPreview>
-          </div>
 
-          <div className='project-details'>
 
-            <p className='project-descrip'>
-              Sidban Movies is a movie streaming platform offering a dynamic
-              and secure online movie-watching experience. The platform allows
-              users to explore a variety of marvel movies, and enjoy streaming,
-              all while ensuring a seamless and modern user interface.
-            </p>
-           
-            <img
-             
-              src='/images/sidban-movies-img.png'
-              className='sidban-imgs'
-              alt='sidban-movies'
-            />
-            
-         
-
-          </div>
-
-          <button
-            className='project-button'
-            onClick={() => { handleOnMovies() }}
-          >
-            watch now
-          </button>
-        </div>
-
-        <br />
-
-       
-
-        <div className={scrollingUp ? 'project-content2' : 'project-content2-visible'}>
-
-          <div className='projectHeader'>
-          <h3>
-            Sid<span className='banText'>ban</span>-Chat <IoMdChatboxes className='project-icon' />
-          </h3>
-          <MdPreview className='previewButton' onClick={()=>{handleOnPreview("Sidban Chat")}}></MdPreview>
-          </div>
-          
-          
-          <div className='project2-details'>
-
-            <p className='project-descrip'>
-              A real-time messaging platform built with the MERN stack and
-              Socket.io. Sidban Chat App enables instant one-on-one
-              communication with secure user authentication and a responsive design.
-            </p>
-
-            <img
-              src='/images/sidban-chat-img.png'
-              alt='sidban-chat'
-              className='sidban-imgs'
-            />
-
-          </div>
-
-          <button
-            className='project-button'
-            onClick={() => { handleOnChat() }}
-          >
-            chat now
-          </button>
-        </div>
-
-        <br />
-
-       
-
-        <div className={scrollingUp ? 'project-content' : 'project-content-visible'}>
+          <div className={scrollingUp ? 'project-content' : 'project-content-visible'}>
             <div className='projectHeader'>
-         <h3>
-            Sid<span className='banText'>ban</span> Auth <SiAuthelia className='project-icon' />
-          </h3>
-          <MdPreview className='previewButton' onClick={()=>{handleOnPreview("Sidban Auth")}}></MdPreview>
+              <h3 >
+                Sid<span className='banText'>ban</span> Movies <MdMovieFilter className='project-icon' />
+              </h3>
+              <MdPreview className='previewButton' onClick={() => { handleOnPreview("Sidban Movies") }}></MdPreview>
+            </div>
+
+            <div className='project-details'>
+
+              <p className='project-descrip'>
+                Sidban Movies is a movie streaming platform offering a dynamic
+                and secure online movie-watching experience. The platform allows
+                users to explore a variety of marvel movies, and enjoy streaming,
+                all while ensuring a seamless and modern user interface.
+              </p>
+
+              <img
+
+                src='/images/sidban-movies-img.png'
+                className='sidban-imgs'
+                alt='sidban-movies'
+              />
+
+
+
+            </div>
+
+            <button
+              className='project-button'
+              onClick={() => { handleOnMovies() }}
+            >
+              watch now
+            </button>
           </div>
-          
-          
+
+          <br />
+
+
+
+          <div className={scrollingUp ? 'project-content2' : 'project-content2-visible'}>
+
+            <div className='projectHeader'>
+              <h3>
+                Sid<span className='banText'>ban</span> Chat <IoMdChatboxes className='project-icon' />
+              </h3>
+              <MdPreview className='previewButton' onClick={() => { handleOnPreview("Sidban Chat") }}></MdPreview>
+            </div>
+
+
+            <div className='project2-details'>
+
+              <p className='project-descrip'>
+                A real-time messaging platform built with the MERN stack and
+                Socket.io. Sidban Chat App enables instant one-on-one
+                communication with secure user authentication and a responsive design.
+              </p>
+
+              <img
+                src='/images/sidban-chat-img.png'
+                alt='sidban-chat'
+                className='sidban-imgs'
+              />
+
+            </div>
+
+            <button
+              className='project-button'
+              onClick={() => { handleOnChat() }}
+            >
+              chat now
+            </button>
+          </div>
+
+          <br />
+
+
+
+          <div className={scrollingUp ? 'project-content' : 'project-content-visible'}>
+            <div className='projectHeader'>
+              <h3>
+                Sid<span className='banText'>ban</span> Auth <SiAuthelia className='project-icon' />
+              </h3>
+              <MdPreview className='previewButton' onClick={() => { handleOnPreview("Sidban Auth") }}></MdPreview>
+            </div>
+
+
+
+            <div className='project3-details'>
+
+              <p className='project-descrip'>
+                sidban-auth is a production-ready authentication system it
+                implements secure login and registration flows, with support for
+                Google OAuth, and two-factor authentication using QR code + OTP.
+              </p>
+
+              <img
+                src='/images/sidban-auth-img.png'
+                alt='sidban-auth'
+                className='sidban-imgs'
+              />
+
+            </div>
+
+            <button
+              className='project-button'
+              onClick={() => { handleOnAuth() }}
+            >
+              try now
+            </button>
+          </div>
+
+          <br />
+
+
+
+          <div className={scrollingUp ? 'project-content2' : 'project-content2-visible'}>
+
+
+            <div className='projectHeader'>
+              <h3>
+                Sid<span className='banText'>ban</span>AI <GiBrain className='project-icon' />
+              </h3>
+              <MdPreview className='previewButton' onClick={() => { handleOnPreview("SidbanAI") }}></MdPreview>
+            </div>
+
+            <div className='project4-details'>
+
+              <p className='project-descrip'>
+                SidbanAI or Sidban-Intelligence is a modern AI-powered
+                conversational platform built to deliver intelligent, fast,
+                and engaging interactions for learning, creativity, coding,
+                productivity, and everyday assistance through a sleek and
+                responsive user experience.
+              </p>
+
+              <img
+                src='/images/sidbanAI.png'
+                alt='sidbanAI'
+                className='sidban-imgs'
+              />
+
+            </div>
+
+            <button
+              className='project-button'
+              onClick={() => { handleOnAI() }}
+            >
+              Start a conversation
+            </button>
+          </div>
+
+          <br/>
+
+          <div className={scrollingUp ? 'project-content' : 'project-content-visible'}>
+          <div className='projectHeader'>
+            <h3>
+              Sid<span className='banText'>ban</span> News <IoNewspaper className='project-icon' />
+            </h3>
+            <MdPreview className='previewButton' onClick={() => { handleOnPreview("Sidban News") }}></MdPreview>
+          </div>
+
+
 
           <div className='project3-details'>
 
             <p className='project-descrip'>
-              sidban-auth is a production-ready authentication system it
-              implements secure login and registration flows, with support for
-              Google OAuth, and two-factor authentication using QR code + OTP.
+              SidbanNews is a modern AI-powered news platform which combines real-time news aggregation with SidbanAI,
+              helping users quickly understand important stories without reading lengthy articles.
+              News content is automatically refreshed every 2 hours to ensure users receive the latest updates 
             </p>
 
             <img
-              src='/images/sidban-auth-img.png'
-              alt='sidban-auth'
+              src='/images/sidbanNewsmain.png'
+              alt='sidban-news'
               className='sidban-imgs'
             />
 
@@ -191,56 +271,28 @@ export default function Projects({ projectRef }) {
 
           <button
             className='project-button'
-            onClick={() => { handleOnAuth() }}
+            onClick={() => { handleOnNews() }}
           >
-            try now
+            Start Reading
           </button>
         </div>
 
-        <br />
 
-      
-
-        <div className={scrollingUp ? 'project-content2' : 'project-content2-visible'}>
-          
-
-              <div className='projectHeader'>
-         <h3>
-            Sid<span className='banText'>ban</span>AI <GiBrain className='project-icon' />
-          </h3>
-          <MdPreview className='previewButton' onClick={()=>{handleOnPreview("SidbanAI")}}></MdPreview>
-          </div>
-
-          <div className='project4-details'>
-
-            <p className='project-descrip'>
-              SidbanAI or Sidban-Intelligence is a modern AI-powered
-              conversational platform built to deliver intelligent, fast,
-              and engaging interactions for learning, creativity, coding,
-              productivity, and everyday assistance through a sleek and
-              responsive user experience.
-            </p>
-
-            <img
-              src='/images/sidbanAI.png'
-              alt='sidbanAI'
-              className='sidban-imgs'
-            />
-
-          </div>
-
-          <button
-            className='project-button'
-            onClick={() => { handleOnAI() }}
-          >
-            Start a conversation
-          </button>
         </div>
+        
+     
+        
+
+
+
 
       </div>
-     
-
-    </div>
- </>   
+    </>
   );
 }
+
+/*<br />
+
+       
+
+*/

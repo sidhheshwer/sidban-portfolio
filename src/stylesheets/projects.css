@@ -20,7 +20,7 @@
 .project-container2{
   padding: 1rem;
   height: 80vh;
-   background:linear-gradient(to left,rgb(21, 20, 20),black,rgba(225, 7, 76, 0.386));
+   background:linear-gradient(to left,rgb(0, 0, 0),black,rgba(225, 7, 76, 0.386));
      backdrop-filter: blur(2px);
      overflow-y: auto;
 }
@@ -102,6 +102,7 @@ display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-content: center;
   align-items: center;
   font-size: 1.5rem;
 }
@@ -110,18 +111,16 @@ display: flex;
 
     width: 2rem;
     height: 2rem;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff6d;
 
-    color: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 0, 0, 0);
 
-    background: rgba(255,255,255,0.05);
+    border: none;
 
-    border: 1px solid rgba(255,255,255,0.08);
-
-    border-radius: 12px;
+    border-radius: 0px;
 
     backdrop-filter: blur(10px);
 
@@ -131,30 +130,47 @@ display: flex;
     transition:
     transform 0.25s ease,
     background 0.25s ease,
-    color 0.25s ease,
-    box-shadow 0.25s ease;
+    color 0.25s ease;
+
+    animation: previewGlow 5s ease-in-out infinite;
+}
+
+@keyframes previewGlow {
+
+    0%{
+        color: #ffffff6d;
+        box-shadow:
+        0 0 12px rgba(255, 0, 76, 0.08);
+    }
+
+    50%{
+        color: #fffffff0;
+        box-shadow:
+        0 0 18px rgba(255, 255, 255, 0);
+    }
+
+    100%{
+        color: #ffffff6d;
+        box-shadow:
+        0 0 12px rgba(255, 0, 76, 0.08);
+    }
 }
 
 .previewButton:hover{
-    color: white;
-
-    background: rgba(255, 0, 76, 0.12);
-
-    transform: translateY(-2px) scale(1.05);
-
-    box-shadow:
-    0 0 20px rgba(255, 0, 76, 0.18);
+    transform: scale(1.08);
 }
+
+
 
 .previewButton:active{
     transform: scale(0.96);
 }
 
 .project-descrip{
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   padding: 1rem;
    border-radius: 10px;
-     background: linear-gradient(to right, #ebebeb,rgba(225, 225, 225, 0.31));
+     background: linear-gradient(to right, #ebebeb,rgba(225, 225, 225, 0.227));
      background-clip: text;
      -webkit-text-fill-color: transparent;
 }
@@ -202,6 +218,7 @@ display: flex;
     backdrop-filter: blur(1px);
   font-size: 0.8rem;
 
+
 }
 .developer-icon{
   color: rgba(255, 255, 255, 0.358); 
@@ -216,7 +233,7 @@ display: flex;
 }
 .project-button{
    width: 100%;
-   height: 1.5rem;
+   height: 2.5rem;
    margin-top: 0.8rem;
    background: linear-gradient(to left,rgba(0, 0, 0, 0.286),rgb(0, 0, 0),rgba(255, 0, 0, 0.521));
    color: white;

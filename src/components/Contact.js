@@ -33,8 +33,8 @@ toast.success("Sidban:Resume downloaded successfully", {
           <FaGithub />
         </a>
       <a
-  href="/Sidhheshwer_Bansode_Resumee.pdf"
-  download="Sidhheshwer_Bansode_Resume.pdf"
+  href="/SidhheshwerBansodeResume.pdf"
+  download="SidhheshwerBansodeResume.pdf"
    onClick={handleOnResumeDownload}
   >
   <FaFileDownload />
