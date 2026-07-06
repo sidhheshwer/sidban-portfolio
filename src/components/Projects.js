@@ -5,7 +5,7 @@ import { MdMovieFilter } from "react-icons/md";
 import { IoMdChatboxes } from "react-icons/io";
 import { SiAuthelia } from "react-icons/si";
 import { MdDeveloperMode } from "react-icons/md";
-import { GiBrain } from "react-icons/gi";
+import { GiBrain, GiFilmSpool } from "react-icons/gi";
 import { MdPreview } from "react-icons/md";
 import { IoNewspaper } from "react-icons/io5";
 import Preview from './Preview';
@@ -57,6 +57,10 @@ export default function Projects({ projectRef }) {
 
   function handleOnNews() {
     window.open("https://sidbannews.onrender.com", "_blank");
+  }
+
+    function handleOnCinema() {
+    window.open("https://sidban-cinema.onrender.com", "_blank");
   }
   function handleOnPreview(projectName) {
     setSelectedProject(projectName);
@@ -278,7 +282,50 @@ export default function Projects({ projectRef }) {
         </div>
 
 
+
+
+         <br/>
+
+          <div className={scrollingUp ? 'project-content' : 'project-content-visible'}>
+          <div className='projectHeader'>
+            <h3>
+              Sid<span className='banText'>ban</span> Cinema <GiFilmSpool className='project-icon' />
+            </h3>
+            <MdPreview className='previewButton' onClick={() => { handleOnPreview("Sidban Cinema") }}></MdPreview>
+          </div>
+
+
+
+          <div className='project3-details'>
+
+            <p className='project-descrip'>
+            SidbanCinema is a movie streaming portfolio application built using React and Spring Boot. It delivers a modern cinematic experience with secure authentication, AI-powered assistance, and seamless movie discovery while showcasing enterprise-level backend architecture.
+            </p>
+
+            <img
+              src='/images/sidban-des-home.png'
+              alt='sidbanCinema'
+              className='sidban-imgs'
+            />
+
+          </div>
+
+          <button
+            className='project-button'
+            onClick={() => { handleOnCinema() }}
+          >
+            Start Watching
+          </button>
         </div>
+
+
+
+        </div>
+
+
+
+
+        
         
      
         

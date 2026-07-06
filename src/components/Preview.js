@@ -4,7 +4,7 @@ import { IoCloseOutline } from "react-icons/io5";
 import { MdMovieFilter } from 'react-icons/md';
 import { IoMdChatboxes } from 'react-icons/io';
 import { SiAuthelia } from 'react-icons/si';
-import { GiBrain } from 'react-icons/gi';
+import { GiBrain, GiFilmSpool } from 'react-icons/gi';
 import { IoNewspaper } from "react-icons/io5";
 export default function Preview({ openPreview, setPreview, selectedProject }) {
   const previewData = [
@@ -298,6 +298,134 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
 
       ]
     }
+    ,
+    {
+  projectName: "Sidban Cinema",
+  projectIcon: <GiFilmSpool className='project-icon' />,
+  projectLink: "https://sidbancinema.onrender.com",
+
+  images: [
+    {
+      image: "/images/sidban-mob-sign.jpeg",
+      description: "Modern user registration page featuring a clean interface for creating a new Sidban Cinema account with secure authentication."
+    },
+
+    {
+      image: "/images/sidban-mob-login.jpeg",
+      description: "Secure login screen allowing users to authenticate and access personalized movie and TV series content."
+    },
+
+    {
+      image: "/images/sidban-mob-alert.jpeg",
+      description: "Custom alert dialog providing informative feedback for authentication, validation, or application status messages."
+    },
+
+    {
+      image: "/images/sidban-mob-home.jpeg",
+      description: "Home page showcasing featured movies, trending titles, and categorized entertainment content with a responsive user interface."
+    },
+
+    {
+      image: "/images/sidban-mob-navbar.jpeg",
+      description: "Navigation menu featuring the user's profile pic and username, along with quick access to Watch History and Logout.It has dedicated buttons for Trending, Movies, TV Series, Top IMDb, and About Sidban Cinema."
+    },
+
+    {
+      image: "/images/sidban-mob-categories.jpeg",
+      description: "Movie categories section organizing content into genres for easy browsing and content discovery."
+    },
+
+    {
+      image: "/images/sidban-mob-category-page.jpeg",
+      description: "Category page displaying a collection of movies filtered by genre with posters and quick navigation."
+    },
+
+    {
+      image: "/images/sidban-mob-search.jpeg",
+      description: "Powerful search interface allowing users to quickly find movies and TV series by title."
+    },
+
+    {
+      image: "/images/sidban-mob-sidbanAITyping.jpeg",
+      description: "SidbanAI retrieves movie information from the OMDb API and transforms it into clear, structured, and user-friendly responses for an enhanced viewing experience."
+    },
+
+    {
+      image: "/images/sidban-mob-airesponse.jpeg",
+      description: "SidbanAI response interface presenting structured movie insights, recommendations, and detailed information."
+    },
+
+    {
+      image: "/images/sidban-mob-moviedetails.jpeg",
+      description: "SidbanAI generates a comprehensive movie information page featuring the synopsis, release date, ratings, genres, key details, and personalized recommendations explaining why the movie is worth watching."
+    },
+
+    {
+      image: "/images/sidban-mob-aboutsidbanAI.jpeg",
+      description: "About SidbanAI section introducing the AI assistant, its capabilities, the creator's information, and a direct link to the creator's portfolio for additional projects and contact details."
+    },
+
+    {
+      image: "/images/sidban-mob-movies.jpeg",
+      description: "Movies section showcasing a collection of films with an organized, responsive browsing experience and automatic content loading for seamless exploration."
+    },
+
+    {
+      image: "/images/sidban-mob-series.jpeg",
+      description: "TV series section featuring popular shows with organized browsing and seamless content exploration."
+    },
+
+    {
+      image: "/images/sidban-mob-top.jpeg",
+      description: "Top-rated IMDB content page highlighting the highest-rated movies and TV series available on the platform."
+    },
+
+    {
+      image: "/images/sidban-mob-history.jpeg",
+      description: "Watch History page enabling users to revisit previously viewed movies and TV series, with options to delete history entries for a personalized experience."
+    },
+
+    {
+      image: "/images/sidban-mob-overview.jpeg",
+      description: "Movie overview section presenting a comprehensive summary, storyline, genres, and essential details."
+    },
+
+    {
+      image: "/images/sidban-mob-cast.jpeg",
+      description: "Cast page displaying actors, actresses, and key crew members involved in the selected movie or TV series."
+    },
+
+    {
+      image: "/images/sidban-mob-player.jpeg",
+      description: "Sidban Player is an embedded third-party video player enabling reliable video streaming with responsive playback controls for a seamless viewing experience."
+    },
+
+    {
+      image: "/images/sidban-mob-thirdparty.jpeg",
+      description: "Sidban Player uses third-party streaming sources section providing integrated alternative viewing links, allowing users to access movies and TV series from multiple streaming providers."
+    },
+
+    {
+      image: "/images/sidban-mob-episodes.jpeg",
+      description: "Episodes page listing seasons and episodes for TV series with intuitive navigation and playback access."
+    },
+
+    {
+      image: "/images/sidban-mob-loader.jpeg",
+      description: "SidbanCinema loader screen enhancing user experience while movies, series, or application data are being fetched."
+    },
+
+    {
+      image: "/images/sidban-mob-error.jpeg",
+      description: "Custom error page informing users that the requested content is currently unavailable on Sidban Cinema, with a clear and user-friendly interface."
+    },
+
+    {
+      image: "/images/sidban-mob-about.jpeg",
+      description: "Sidban Cinema About page introducing the platform, its architecture, core technologies, streaming features, developer information."
+    }
+  ]
+}
 
   ];
   const currentProject = previewData.find(
