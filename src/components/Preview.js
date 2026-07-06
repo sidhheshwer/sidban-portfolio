@@ -361,7 +361,7 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
     },
 
     {
-      image: "/images/sidban-mob-aboutsidbanAI.jpeg",
+      image: "/images/sidban-mob-aboutSidbanAI.jpeg",
       description: "About SidbanAI section introducing the AI assistant, its capabilities, the creator's information, and a direct link to the creator's portfolio for additional projects and contact details."
     },
 
