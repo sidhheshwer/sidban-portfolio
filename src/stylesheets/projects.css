@@ -263,6 +263,60 @@ display: flex;
   }
 }
 
+
+.imgGitDiv{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+
+.gitBtn{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+    width: 100%;
+    height: auto;
+     font-size: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(
+    -135deg,
+    #000 0%,
+    #000 40%,
+    #2ee509b0 100%
+);
+ transition: transform 0.3s ease;
+}
+
+.gitBtn:hover{
+          color: rgba(182, 179, 179, 0.864);
+        background: linear-gradient( -135deg, #000 0%, #000 40%, #e50909b0 100%);
+        transform: scale(1.08);
+
+}
+
+
+.gitBtnIcon{
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+   transition: transform 0.3s ease;
+}
+
+.gitBtnIcon:hover{
+  color: rgb(145, 255, 0);
+  transform: scale(1.08);
+}
+
+
+
+
 @media screen and (min-width: 768px) {
 
 
@@ -302,6 +356,32 @@ display: flex;
   color: rgb(255, 183, 0);
 }
 
+.gitBtn{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(
+    -135deg,
+    #000 0%,
+    #000 40%,
+    #2ee509b0 100%
+);
+}
+
+.gitBtnIcon{
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+}
 
 }
 

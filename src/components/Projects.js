@@ -9,6 +9,7 @@ import { GiBrain, GiFilmSpool } from "react-icons/gi";
 import { MdPreview } from "react-icons/md";
 import { IoNewspaper } from "react-icons/io5";
 import Preview from './Preview';
+import { GrGithub } from 'react-icons/gr';
 export default function Projects({ projectRef }) {
 
   const [scrollingUp, setScrollingUp] = useState(false);
@@ -110,17 +111,24 @@ export default function Projects({ projectRef }) {
                 all while ensuring a seamless and modern user interface.
               </p>
 
+
+            <div className='imgGitDiv'>
               <img
 
                 src='/images/sidban-movies-img.png'
                 className='sidban-imgs'
                 alt='sidban-movies'
               />
-
+           
+         
+              <button className='gitBtn'  onClick={() => window.open("https://github.com/sidhheshwer/sidban-movies", "_blank", "noopener,noreferrer")}>  <GrGithub className='gitBtnIcon'/>Repository</button>
+          
 
 
             </div>
+            
 
+            </div>
             <button
               className='project-button'
               onClick={() => { handleOnMovies() }}
@@ -151,11 +159,17 @@ export default function Projects({ projectRef }) {
                 communication with secure user authentication and a responsive design.
               </p>
 
+
+             <div className='imgGitDiv'>
               <img
                 src='/images/sidban-chat-img.png'
                 alt='sidban-chat'
                 className='sidban-imgs'
               />
+
+
+                <button className='gitBtn'  onClick={() => window.open("https://github.com/sidhheshwer/sidban-chatapp", "_blank", "noopener,noreferrer")}>  <GrGithub className='gitBtnIcon'/>Repository</button>
+              </div>
 
             </div>
 
@@ -189,12 +203,16 @@ export default function Projects({ projectRef }) {
                 Google OAuth, and two-factor authentication using QR code + OTP.
               </p>
 
+
+             <div className='imgGitDiv'>
               <img
                 src='/images/sidban-auth-img.png'
                 alt='sidban-auth'
                 className='sidban-imgs'
               />
 
+                <button className='gitBtn'  onClick={() => window.open("https://github.com/sidhheshwer/sidban-auth", "_blank", "noopener,noreferrer")}>  <GrGithub className='gitBtnIcon'/>Repository</button>
+            </div>
             </div>
 
             <button
@@ -229,11 +247,17 @@ export default function Projects({ projectRef }) {
                 responsive user experience.
               </p>
 
+
+             <div className='imgGitDiv'>
               <img
                 src='/images/sidbanAI.png'
                 alt='sidbanAI'
                 className='sidban-imgs'
               />
+
+
+  <button className='gitBtn'  onClick={() => window.open("https://github.com/sidhheshwer/sidbanAI-Intelligence", "_blank", "noopener,noreferrer")}>  <GrGithub className='gitBtnIcon'/>Repository</button>
+              </div>
 
             </div>
 
@@ -265,12 +289,17 @@ export default function Projects({ projectRef }) {
               News content is automatically refreshed every 2 hours to ensure users receive the latest updates 
             </p>
 
+
+            <div className='imgGitDiv'>
             <img
               src='/images/sidbanNewsmain.png'
               alt='sidban-news'
               className='sidban-imgs'
             />
 
+
+              <button className='gitBtn'  onClick={() => window.open("https://github.com/sidhheshwer/sidban-news", "_blank", "noopener,noreferrer")}>  <GrGithub className='gitBtnIcon'/>Repository</button>
+          </div>
           </div>
 
           <button
@@ -286,7 +315,7 @@ export default function Projects({ projectRef }) {
 
          <br/>
 
-          <div className={scrollingUp ? 'project-content' : 'project-content-visible'}>
+          <div className={scrollingUp ? 'project-content2' : 'project-content2-visible'}>
           <div className='projectHeader'>
             <h3>
               Sid<span className='banText'>ban</span> Cinema <GiFilmSpool className='project-icon' />
@@ -296,18 +325,26 @@ export default function Projects({ projectRef }) {
 
 
 
-          <div className='project3-details'>
+          <div className='project4-details'>
 
             <p className='project-descrip'>
             SidbanCinema is a movie streaming portfolio application built using React and Spring Boot. It delivers a modern cinematic experience with secure authentication, AI-powered assistance, and seamless movie discovery while showcasing enterprise-level backend architecture.
             </p>
 
+
+            <div className='imgGitDiv'>
             <img
               src='/images/sidban-des-home.png'
               alt='sidbanCinema'
               className='sidban-imgs'
             />
 
+
+              <button className='gitBtn'  onClick={() => window.open("https://github.com/sidhheshwer/sidban-cinema", "_blank", "noopener,noreferrer")}>  <GrGithub className='gitBtnIcon'/>Repository</button>
+            </div>
+         
+
+         
           </div>
 
           <button
