@@ -4,23 +4,23 @@
   "short_name": "Sidban-Portfolio",
   "icons": [
     {
-      "src": "sidban-port16X16.png",
+      "src": "sidban-port16x16.png",
       "sizes": "16x16",
       "type": "image/png"
     },
     {
-      "src": "sidban-port32X32.png",
+      "src": "sidban-port32x32.png",
       "sizes": "32x32",
       "type": "image/png"
     },
     {
-      "src": "sidban-port192X192.png",
+      "src": "sidban-port192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "sidban-port512X512.png",
+      "src": "sidban-port512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
