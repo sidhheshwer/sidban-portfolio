@@ -85,6 +85,8 @@ function handleOnScrollView(ref,index) {
     className='sidProfilePicImage'
     src='/images/sidPic1.png'
     alt='sidhheshwer-bansode-picture'
+    draggable="false"
+    onContextMenu={(e) => e.preventDefault()}
   />
 </div>
       <SidbanContextProvider>

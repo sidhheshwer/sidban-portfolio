@@ -69,6 +69,11 @@ background: linear-gradient(
  
   border-radius: 50%;
 
+
+   -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
  
 }
 
