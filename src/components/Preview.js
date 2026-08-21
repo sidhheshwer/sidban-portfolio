@@ -58,7 +58,7 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
       ],
       videos:[
         {
-          video:"https://res.cloudinary.com/dxaidbhw8/video/upload/v1787307309/SidbanNews_kxuaej.mp4"
+          video:"https://player.cloudinary.com/embed/?cloud_name=dxaidbhw8&public_id=SidbanMovies_rkbzby"
         }
       ]
     },
@@ -95,11 +95,6 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
           description: "Live user chat experience with synchronized messaging and responsive real-time conversation updates."
         }
 
-      ],
-      videos:[
-        {
-          video:"https://res.cloudinary.com/dxaidbhw8/video/upload/v1787307309/SidbanNews_kxuaej.mp4"
-        }
       ]
     },
 
@@ -162,11 +157,6 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
           description: "Custom animated SidbanAuth loading screen designed for a smooth and modern authentication experience."
         }
 
-      ],
-      videos:[
-        {
-          video:"https://res.cloudinary.com/dxaidbhw8/video/upload/v1787307309/SidbanNews_kxuaej.mp4"
-        }
       ]
     },
 
@@ -235,7 +225,7 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
       ],
       videos:[
         {
-          video:"https://res.cloudinary.com/dxaidbhw8/video/upload/v1787307309/SidbanNews_kxuaej.mp4"
+          video:"https://player.cloudinary.com/embed/?cloud_name=dxaidbhw8&public_id=SidbanAI_wf7wya"
         }
       ]
     },
@@ -452,7 +442,7 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
   ],
       videos:[
         {
-          video:"https://res.cloudinary.com/dxaidbhw8/video/upload/v1787307309/SidbanNews_kxuaej.mp4"
+          video:"https://player.cloudinary.com/embed/?cloud_name=dxaidbhw8&public_id=SidbanCinema_obrljb"
         }
       ]
 }
