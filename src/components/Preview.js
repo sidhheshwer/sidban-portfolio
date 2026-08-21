@@ -55,6 +55,11 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
           description: "Series streaming interface with season-based navigation for organized and user-friendly viewing."
         }
 
+      ],
+      videos:[
+        {
+          video:"https://res.cloudinary.com/dxaidbhw8/video/upload/v1787307309/SidbanNews_kxuaej.mp4"
+        }
       ]
     },
 
@@ -90,6 +95,11 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
           description: "Live user chat experience with synchronized messaging and responsive real-time conversation updates."
         }
 
+      ],
+      videos:[
+        {
+          video:"https://res.cloudinary.com/dxaidbhw8/video/upload/v1787307309/SidbanNews_kxuaej.mp4"
+        }
       ]
     },
 
@@ -152,6 +162,11 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
           description: "Custom animated SidbanAuth loading screen designed for a smooth and modern authentication experience."
         }
 
+      ],
+      videos:[
+        {
+          video:"https://res.cloudinary.com/dxaidbhw8/video/upload/v1787307309/SidbanNews_kxuaej.mp4"
+        }
       ]
     },
 
@@ -217,6 +232,11 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
           description: "Comprehensive About page explaining SidbanAI architecture, technologies, security practices, platform features, and integrated project ecosystem."
         }
 
+      ],
+      videos:[
+        {
+          video:"https://res.cloudinary.com/dxaidbhw8/video/upload/v1787307309/SidbanNews_kxuaej.mp4"
+        }
       ]
     },
     {
@@ -296,6 +316,11 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
           description: "About page showcasing SidbanNews architecture,Integrated SidbanAI intelligence, real-time news refresh system, platform technologies and creator information."
         }
 
+      ],
+      videos:[
+        {
+          video:"https://player.cloudinary.com/embed/?cloud_name=dxaidbhw8&public_id=SidbanNews_kxuaej"
+        }
       ]
     }
     ,
@@ -424,7 +449,12 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
       image: "/images/sidban-mob-about.jpeg",
       description: "Sidban Cinema About page introducing the platform, its architecture, core technologies, streaming features, developer information."
     }
-  ]
+  ],
+      videos:[
+        {
+          video:"https://res.cloudinary.com/dxaidbhw8/video/upload/v1787307309/SidbanNews_kxuaej.mp4"
+        }
+      ]
 }
 
   ];
@@ -465,7 +495,7 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
         <div className='previewMain'>
 
           {currentProject?.images.map((item, i) => (
-
+            
             <div className='previewCard' key={i}>
               <img
                 className="previewImages"
@@ -476,9 +506,25 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
 
             </div>
 
+    
           ))}
 
+  {currentProject?.videos?.map((item, i) => (
+  <div className="previewCard previewVideoCard" key={i}>
+  <iframe
+  className="previewVideo"
+  src={item.video}
+  title="Sidban News Demo"
+  allow="autoplay; fullscreen"
+  allowFullScreen
+/>
+
+  </div>
+))}
+          
+
         </div>
+       
 
       </div>
       :
