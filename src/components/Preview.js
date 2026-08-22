@@ -95,6 +95,11 @@ export default function Preview({ openPreview, setPreview, selectedProject }) {
           description: "Live user chat experience with synchronized messaging and responsive real-time conversation updates."
         }
 
+      ],
+      videos:[
+        {
+          video:"https://player.cloudinary.com/embed/?cloud_name=dxaidbhw8&public_id=SidbanChat_q0agbw"
+        }
       ]
     },
 
